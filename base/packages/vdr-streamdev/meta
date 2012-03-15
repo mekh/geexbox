@@ -1,0 +1,4 @@
+PKG_NAME=vdr-streamdev
+PKG_VERSION=0.5.0+git20101214
+PKG_URL="$DISTRO_SRCS/vdr-streamdev-${PKG_VERSION}.tar.bz2"
+PKG_REV=1

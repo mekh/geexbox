@@ -1,0 +1,10 @@
+#!/bin/sh
+
+. config/options
+
+cd $BUILD/$1*
+
+setup_toolchain host
+
+./configure --host=$HOST_NAME --build=$HOST_NAME
+make depmod

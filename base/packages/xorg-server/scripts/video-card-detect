@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# check for each manufacturer GPU and apply appropiate Xorg policy
+if [ -d /usr/lib/xorg/gpu ]; then
+  for gpu in /usr/lib/xorg/gpu/*.sh; do
+    [ -r $i ] && /bin/sh $gpu
+  done
+fi
+
+exit 0

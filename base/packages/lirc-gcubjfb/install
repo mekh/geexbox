@@ -1,0 +1,22 @@
+#!/bin/sh
+
+. config/options
+
+#cd $BUILD/$1*/lirc_igorhid
+
+dir=$INSTALL/lib/modules/$(kernel_version)/kernel/extra
+dirp=$INSTALL/etc/udev/rules.d
+
+mkdir -p $dir
+mkdir -p $dirp
+cp $BUILD/$1*/lirc_igorhid/lirc_igorhid.ko $dir
+cp $BUILD/$1*/90-lirc.rules $dirp
+
+#cd $dir
+#echo "CURRENT DIR IS"
+#pwd
+#echo "ROOT is"
+#echo $ROOT
+#echo "ROOTFS is"
+#echo $ROOTFS
+#$TOOLCHAIN/bin/depmod -b $ROOTFS/lib/modules/$(kernel_version) -a

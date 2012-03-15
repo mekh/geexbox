@@ -1,0 +1,783 @@
+diff --git a/addons/skin.confluence/720p/DialogKeyboard.xml b/addons/skin.confluence/720p/DialogKeyboard.xml
+index a5e27a1..7dcca62 100644
+--- a/addons/skin.confluence/720p/DialogKeyboard.xml
++++ b/addons/skin.confluence/720p/DialogKeyboard.xml
+@@ -92,7 +92,7 @@
+ 					<label>20177</label>
+ 					<onleft>57</onleft>
+ 					<onright>48</onright>
+-					<onup>307</onup>
++					<onup>909001</onup>
+ 					<ondown>302</ondown>
+ 					<texturenofocus border="25,25,5,5">KeyboardCornerTopNF.png</texturenofocus>
+ 					<texturefocus border="25,25,5,5">KeyboardCornerTop.png</texturefocus>
+@@ -109,7 +109,7 @@
+ 					<height>50</height>
+ 					<onleft>300</onleft>
+ 					<onright>49</onright>
+-					<onup>32</onup>
++					<onup>909006</onup>
+ 					<ondown>65</ondown>
+ 					<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
+ 					<texturefocus border="5">KeyboardKey.png</texturefocus>
+@@ -126,7 +126,7 @@
+ 					<height>50</height>
+ 					<onleft>48</onleft>
+ 					<onright>50</onright>
+-					<onup>32</onup>
++					<onup>909007</onup>
+ 					<ondown>66</ondown>
+ 					<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
+ 					<texturefocus border="5">KeyboardKey.png</texturefocus>
+@@ -228,7 +228,7 @@
+ 					<height>50</height>
+ 					<onleft>54</onleft>
+ 					<onright>56</onright>
+-					<onup>305</onup>
++					<onup>306</onup>
+ 					<ondown>72</ondown>
+ 					<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
+ 					<texturefocus border="5">KeyboardKey.png</texturefocus>
+@@ -245,7 +245,7 @@
+ 					<height>50</height>
+ 					<onleft>55</onleft>
+ 					<onright>57</onright>
+-					<onup>306</onup>
++					<onup>8</onup>
+ 					<ondown>73</ondown>
+ 					<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
+ 					<texturefocus border="5">KeyboardKey.png</texturefocus>
+@@ -262,7 +262,7 @@
+ 					<height>50</height>
+ 					<onleft>56</onleft>
+ 					<onright>300</onright>
+-					<onup>306</onup>
++					<onup>8</onup>
+ 					<ondown>74</ondown>
+ 					<texturenofocus flipx="true" border="5,25,25,5">KeyboardCornerTopNF.png</texturenofocus>
+ 					<texturefocus flipx="true" border="5,25,25,5">KeyboardCornerTop.png</texturefocus>
+@@ -472,7 +472,7 @@
+ 					<onleft>84</onleft>
+ 					<onright>75</onright>
+ 					<onup>302</onup>
+-					<ondown>304</ondown>
++					<ondown>307</ondown>
+ 					<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
+ 					<texturefocus border="5">KeyboardKey.png</texturefocus>
+ 					<radioposy>5</radioposy>
+@@ -594,7 +594,7 @@
+ 					<onleft>80</onleft>
+ 					<onright>82</onright>
+ 					<onup>71</onup>
+-					<ondown>8</ondown>
++					<ondown>909002</ondown>
+ 					<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
+ 					<texturefocus border="5">KeyboardKey.png</texturefocus>
+ 					<align>center</align>
+@@ -611,7 +611,7 @@
+ 					<onleft>81</onleft>
+ 					<onright>83</onright>
+ 					<onup>72</onup>
+-					<ondown>8</ondown>
++					<ondown>909003</ondown>
+ 					<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
+ 					<texturefocus border="5">KeyboardKey.png</texturefocus>
+ 					<align>center</align>
+@@ -628,7 +628,7 @@
+ 					<onleft>82</onleft>
+ 					<onright>84</onright>
+ 					<onup>73</onup>
+-					<ondown>8</ondown>
++					<ondown>909004</ondown>
+ 					<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
+ 					<texturefocus border="5">KeyboardKey.png</texturefocus>
+ 					<align>center</align>
+@@ -645,7 +645,7 @@
+ 					<onleft>83</onleft>
+ 					<onright>303</onright>
+ 					<onup>74</onup>
+-					<ondown>8</ondown>
++					<ondown>909005</ondown>
+ 					<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
+ 					<texturefocus border="5">KeyboardKey.png</texturefocus>
+ 					<align>center</align>
+@@ -653,17 +653,35 @@
+ 					<font>font13</font>
+ 					<focusedcolor>black</focusedcolor>
+ 				</control>
++				<control type="button" id="307">
++					<description>IP Input button</description>
++					<posx>0</posx>
++					<posy>150</posy>
++					<width>100</width>
++					<height>50</height>
++					<texturenofocus border="25,5,25,5">KeyboardKeyNF.png</texturenofocus>
++					<texturefocus border="25,5,25,5">KeyboardKey.png</texturefocus>
++					<label>909002</label>
++					<font>font13</font>
++					<align>center</align>
++					<aligny>center</aligny>
++					<onleft>909005</onleft>
++					<onright>304</onright>
++					<onup>303</onup>
++					<ondown>304</ondown>
++					<focusedcolor>black</focusedcolor>
++				</control>				
+ 				<control type="radiobutton" id="304">
+ 					<description>Symbols button</description>
+-					<posx>0</posx>
++					<posx>100</posx>
+ 					<posy>150</posy>
+-					<width>200</width>
++					<width>100</width>
+ 					<height>50</height>
+ 					<label>20180</label>
+-					<onleft>8</onleft>
++					<onleft>307</onleft>
+ 					<onright>85</onright>
+-					<onup>303</onup>
+-					<ondown>307</ondown>
++					<onup>307</onup>
++					<ondown>909001</ondown>
+ 					<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
+ 					<texturefocus border="5">KeyboardKey.png</texturefocus>
+ 					<radioposy>5</radioposy>
+@@ -674,6 +692,27 @@
+ 					<font>font13</font>
+ 					<focusedcolor>black</focusedcolor>
+ 				</control>
++				<control type="radiobutton" id="909001">
++					<description>Russian layout</description>
++					<posx>0</posx>
++					<posy>200</posy>
++					<width>200</width>
++					<height>50</height>
++					<label>909001</label>
++					<onleft>8</onleft>
++					<onright>909006</onright>
++					<onup>304</onup>
++					<ondown>300</ondown>
++					<texturenofocus border="25,25,5,5">KeyboardCornerBottomNF.png</texturenofocus>
++					<texturefocus border="25,25,5,5">KeyboardCornerBottom.png</texturefocus>
++					<radioposy>5</radioposy>
++					<radiowidth>20</radiowidth>
++					<radioheight>20</radioheight>
++					<align>center</align>
++					<aligny>center</aligny>
++					<font>font13</font>
++					<focusedcolor>black</focusedcolor>
++				</control>
+ 				<control type="button" id="85">
+ 					<description>'U' button</description>
+ 					<posx>200</posx>
+@@ -683,7 +722,7 @@
+ 					<onleft>304</onleft>
+ 					<onright>86</onright>
+ 					<onup>75</onup>
+-					<ondown>32</ondown>
++					<ondown>909006</ondown>
+ 					<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
+ 					<texturefocus border="5">KeyboardKey.png</texturefocus>
+ 					<align>center</align>
+@@ -700,7 +739,7 @@
+ 					<onleft>85</onleft>
+ 					<onright>87</onright>
+ 					<onup>76</onup>
+-					<ondown>32</ondown>
++					<ondown>909007</ondown>
+ 					<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
+ 					<texturefocus border="5">KeyboardKey.png</texturefocus>
+ 					<align>center</align>
+@@ -766,7 +805,7 @@
+ 					<width>50</width>
+ 					<height>50</height>
+ 					<onleft>89</onleft>
+-					<onright>8</onright>
++					<onright>909002</onright>
+ 					<onup>80</onup>
+ 					<ondown>32</ondown>
+ 					<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
+@@ -776,15 +815,14 @@
+ 					<font>font13</font>
+ 					<focusedcolor>black</focusedcolor>
+ 				</control>
+-				<control type="button" id="8">
+-					<description>BACKSPACE button</description>
++				<control type="button" id="909002">
++					<description>'add_1-/' button</description>
+ 					<posx>500</posx>
+ 					<posy>150</posy>
+-					<width>200</width>
++					<width>50</width>
+ 					<height>50</height>
+-					<label>20181</label>
+ 					<onleft>90</onleft>
+-					<onright>304</onright>
++					<onright>909003</onright>
+ 					<onup>81</onup>
+ 					<ondown>305</ondown>
+ 					<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
+@@ -794,29 +832,114 @@
+ 					<font>font13</font>
+ 					<focusedcolor>black</focusedcolor>
+ 				</control>
+-				<control type="button" id="307">
+-					<description>IP Input button</description>
+-					<posx>0</posx>
+-					<posy>200</posy>
+-					<width>200</width>
++				<control type="button" id="909003">
++					<description>'add_2-.' button</description>
++					<posx>550</posx>
++					<posy>150</posy>
++					<width>50</width>
+ 					<height>50</height>
+-					<texturenofocus border="25,5,25,5">KeyboardCornerBottomNF.png</texturenofocus>
+-					<texturefocus border="25,5,25,5">KeyboardCornerBottom.png</texturefocus>
+-					<label>1006</label>
++					<onleft>909002</onleft>
++					<onright>909004</onright>
++					<onup>82</onup>
++					<ondown>306</ondown>
++					<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
++					<texturefocus border="5">KeyboardKey.png</texturefocus>
++					<align>center</align>
++					<aligny>center</aligny>
+ 					<font>font13</font>
++					<focusedcolor>black</focusedcolor>
++				</control>
++				<control type="button" id="909004">
++					<description>'add_3-,' button</description>
++					<posx>600</posx>
++					<posy>150</posy>
++					<width>50</width>
++					<height>50</height>
++					<onleft>909003</onleft>
++					<onright>909005</onright>
++					<onup>83</onup>
++					<ondown>8</ondown>
++					<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
++					<texturefocus border="5">KeyboardKey.png</texturefocus>
+ 					<align>center</align>
+ 					<aligny>center</aligny>
++					<font>font13</font>
++					<focusedcolor>black</focusedcolor>
++				</control>
++				<control type="button" id="909005">
++					<description>'add_4-:' button</description>
++					<posx>650</posx>
++					<posy>150</posy>
++					<width>50</width>
++					<height>50</height>
++					<onleft>909004</onleft>
++					<onright>307</onright>
++					<onup>84</onup>
++					<ondown>8</ondown>
++					<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
++					<texturefocus border="5">KeyboardKey.png</texturefocus>
++					<align>center</align>
++					<aligny>center</aligny>
++					<font>font13</font>
++					<focusedcolor>black</focusedcolor>
++				</control>
++				<control type="button" id="8">
++					<description>BACKSPACE button</description>
++					<posx>600</posx>
++					<posy>200</posy>
++					<width>100</width>
++					<height>50</height>
++					<label>20181</label>
+ 					<onleft>306</onleft>
++					<onright>909001</onright>
++					<onup>909005</onup>
++					<ondown>57</ondown>
++					<texturenofocus flipx="true" border="5,5,25,25">KeyboardCornerBottomNF.png</texturenofocus>
++					<texturefocus flipx="true" border="5,5,25,25">KeyboardCornerBottom.png</texturefocus>
++					<align>center</align>
++					<aligny>center</aligny>
++					<font>font13</font>
++					<focusedcolor>black</focusedcolor>
++				</control>
++				<control type="button" id="909006">
++					<description>'add_5-;' button</description>
++					<posx>200</posx>
++					<posy>200</posy>
++					<width>50</width>
++					<height>50</height>
++					<onleft>909001</onleft>
++					<onright>909007</onright>
++					<onup>85</onup>
++					<ondown>48</ondown>
++					<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
++					<texturefocus border="5">KeyboardKey.png</texturefocus>
++					<align>center</align>
++					<aligny>center</aligny>
++					<font>font13</font>
++					<focusedcolor>black</focusedcolor>
++				</control>
++				<control type="button" id="909007">
++					<description>'add_6-_' button</description>
++					<posx>250</posx>
++					<posy>200</posy>
++					<width>50</width>
++					<height>50</height>
++					<onleft>909006</onleft>
+ 					<onright>32</onright>
+-					<onup>304</onup>
+-					<ondown>300</ondown>
++					<onup>86</onup>
++					<ondown>49</ondown>
++					<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
++					<texturefocus border="5">KeyboardKey.png</texturefocus>
++					<align>center</align>
++					<aligny>center</aligny>
++					<font>font13</font>
+ 					<focusedcolor>black</focusedcolor>
+ 				</control>
+ 				<control type="button" id="32">
+ 					<description>SPACE button</description>
+-					<posx>200</posx>
++					<posx>300</posx>
+ 					<posy>200</posy>
+-					<width>300</width>
++					<width>200</width>
+ 					<height>50</height>
+ 					<label>20182</label>
+ 					<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
+@@ -825,16 +948,16 @@
+ 					<aligny>center</aligny>
+ 					<font>font13</font>
+ 					<focusedcolor>black</focusedcolor>
+-					<onleft>307</onleft>
++					<onleft>909007</onleft>
+ 					<onright>305</onright>
+-					<onup>85</onup>
+-					<ondown>48</ondown>
++					<onup>87</onup>
++					<ondown>50</ondown>
+ 				</control>
+ 				<control type="button" id="305">
+ 					<description>previous button</description>
+ 					<posx>500</posx>
+ 					<posy>200</posy>
+-					<width>100</width>
++					<width>50</width>
+ 					<height>50</height>
+ 					<label>&lt;</label>
+ 					<align>center</align>
+@@ -845,28 +968,28 @@
+ 					<focusedcolor>black</focusedcolor>
+ 					<onleft>32</onleft>
+ 					<onright>306</onright>
+-					<onup>8</onup>
++					<onup>909002</onup>
+ 					<ondown>54</ondown>
+ 				</control>
+ 				<control type="button" id="306">
+ 					<description>next button</description>
+-					<posx>600</posx>
++					<posx>550</posx>
+ 					<posy>200</posy>
+-					<width>100</width>
++					<width>50</width>
+ 					<height>50</height>
+ 					<label>&gt;</label>
+ 					<align>center</align>
+ 					<aligny>center</aligny>
+-					<texturenofocus flipx="true" border="5,5,25,25">KeyboardCornerBottomNF.png</texturenofocus>
+-					<texturefocus flipx="true" border="5,5,25,25">KeyboardCornerBottom.png</texturefocus>
++					<texturenofocus flipx="true" border="5,5,25,25">KeyboardKeyNF.png</texturenofocus>
++					<texturefocus flipx="true" border="5,5,25,25">KeyboardKey.png</texturefocus>
+ 					<font>font30</font>
+ 					<focusedcolor>black</focusedcolor>
+ 					<onleft>305</onleft>
+-					<onright>307</onright>
+-					<onup>8</onup>
+-					<ondown>56</ondown>
++					<onright>8</onright>
++					<onup>909003</onup>
++					<ondown>55</ondown>
+ 				</control>
+ 			</control>
+ 		</control>
+ 	</controls>
+-</window>
+\ No newline at end of file
++</window>
+diff --git a/language/English/strings.xml b/language/English/strings.xml
+index fc4ca2c..0187e57 100644
+--- a/language/English/strings.xml
++++ b/language/English/strings.xml
+@@ -1715,8 +1715,8 @@
+   <string id="20177">Done</string>
+   <string id="20178">Shift</string>
+   <string id="20179">Caps Lock</string>
+-  <string id="20180">Symbols</string>
+-  <string id="20181">Backspace</string>
++  <string id="20180">%#</string>
++  <string id="20181">Del</string>
+   <string id="20182">Space</string>
+   <string id="20183">Reload skin</string>
+   <string id="20184">Rotate pictures using EXIF information</string>
+@@ -2354,6 +2354,9 @@
+   <string id="34110">7.1</string>
+   <!-- 34112-34200 reserved for future use -->
+ 
++  <string id="909001">Rus</string>
++  <string id="909002">IP</string>
++
+   <string id="34201">Can't find a next item to play</string>
+   <string id="34202">Can't find a previous item to play</string>
+   
+diff --git a/language/Russian/strings.xml b/language/Russian/strings.xml
+index 3a6df26..d8d7abc 100644
+--- a/language/Russian/strings.xml
++++ b/language/Russian/strings.xml
+@@ -1715,8 +1715,8 @@
+   <string id="20177">Готово</string>
+   <string id="20178">Shift</string>
+   <string id="20179">Caps Lock</string>
+-  <string id="20180">Символы</string>
+-  <string id="20181">← Backspace</string>
++  <string id="20180">%#</string>
++  <string id="20181">&lt;-- Del</string>
+   <string id="20182">Пробел</string>
+   <string id="20183">Обновить обложку</string>
+   <string id="20184">Поворачивать фото по информации из EXIF</string>
+@@ -2386,4 +2386,7 @@
+   <string id="36016">Подключен</string> <!-- max. 13 characters -->
+   <string id="36017">Адаптер найден, но libcec недоступен</string>
+   <string id="36018">Использовать языковые настройки ТВ</string>
++
++  <string id="909001">Рус</string>
++  <string id="909002">IP</string>
+ </strings>
+diff --git a/xbmc/dialogs/GUIDialogKeyboard.cpp b/xbmc/dialogs/GUIDialogKeyboard.cpp
+index 205c10b..e54622f 100644
+--- a/xbmc/dialogs/GUIDialogKeyboard.cpp
++++ b/xbmc/dialogs/GUIDialogKeyboard.cpp
+@@ -46,6 +46,8 @@ static char symbol_map[37] = ")!@#$%^&*([]{}-_=+;:\'\",.<>/?\\|`~    ";
+ #define CTL_BUTTON_LEFT       305
+ #define CTL_BUTTON_RIGHT      306
+ #define CTL_BUTTON_IP_ADDRESS 307
++#define CTL_BUTTON_RUS_LAYOUT 909001
++
+ 
+ #define CTL_LABEL_EDIT        310
+ #define CTL_LABEL_HEADING     311
+@@ -66,6 +68,7 @@ CGUIDialogKeyboard::CGUIDialogKeyboard(void)
+   m_hiddenInput = false;
+   m_filtering = FILTERING_NONE;
+   m_keyType = LOWER;
++	m_keyLayout = ENG;
+   m_strHeading = "";
+   m_lastRemoteClickTime = 0;
+ }
+@@ -224,6 +227,11 @@ bool CGUIDialogKeyboard::OnMessage(CGUIMessage& message)
+       case CTL_BUTTON_SHIFT:
+         OnShift();
+         break;
++			case CTL_BUTTON_RUS_LAYOUT:
++				if(m_keyLayout == ENG) m_keyLayout = RUS;
++				else m_keyLayout = ENG;
++				UpdateButtons();
++				break;
+       case CTL_BUTTON_CAPS:
+         if (m_keyType == LOWER)
+           m_keyType = CAPS;
+@@ -409,7 +417,7 @@ void CGUIDialogKeyboard::OnRemoteNumberClick(int key)
+   Character(ch);
+ }
+ 
+-char CGUIDialogKeyboard::GetCharacter(int iButton)
++WCHAR CGUIDialogKeyboard::GetCharacter(int iButton)
+ {
+   // First the numbers
+   if (iButton >= 48 && iButton <= 57)
+@@ -424,24 +432,49 @@ char CGUIDialogKeyboard::GetCharacter(int iButton)
+   }
+   else if (iButton == 32) // space
+     return (char)iButton;
+-  else if (iButton >= 65 && iButton < 91)
+-  {
+-    if (m_keyType == SYMBOLS)
+-    { // symbol
+-      OnSymbols();
+-      return symbol_map[iButton - 65 + 10];
+-    }
+-    if ((m_keyType == CAPS && m_bShift) || (m_keyType == LOWER && !m_bShift))
+-    { // make lower case
+-      iButton += 32;
+-    }
+-    if (m_bShift)
+-    { // turn off the shift key
+-      OnShift();
+-    }
+-    return (char) iButton;
+-  }
+-  else
++  else if ((iButton >= 65 && iButton < 91) || (iButton <= 909007 && iButton >=909002 && m_keyLayout == RUS))		//todo
++  {
++		if(m_keyLayout == ENG)
++		{
++		  if (m_keyType == SYMBOLS)
++		  { // symbol
++		    OnSymbols();
++		    return symbol_map[iButton - 65 + 10];
++		  }
++		  if ((m_keyType == CAPS && m_bShift) || (m_keyType == LOWER && !m_bShift))
++		  { // make lower case
++		    iButton += 32;
++		  }
++		  if (m_bShift)
++		  { // turn off the shift key
++		    OnShift();
++		  }
++			//return 'А'; 
++		  return (char) iButton;
++		}
++		else
++		{
++		  if (m_keyType == SYMBOLS)
++		  { // symbol
++		    OnSymbols();
++		    return symbol_map[iButton - 65 + 10];
++		  }
++			int offset = iButton < 91 ? iButton - 65 : iButton - 909002 + 26;
++			bool sh = m_bShift;
++		  if (m_bShift)
++		  { // turn off the shift key
++		    OnShift();
++		  }
++			if ((m_keyType == CAPS && sh) || (m_keyType == LOWER && !sh))	return L'а' + offset;
++			else return L'А' + offset;
++		}
++
++  }
++  else if(iButton <= 909007 && iButton >=909002)
++	{
++			return GetAddButtonById(iButton);
++	}
++	else
+   { // check for symbols
+     for (unsigned int i = 0; i < NUM_SYMBOLS; i++)
+       if (iButton == symbolButtons[i])
+@@ -497,6 +530,12 @@ void CGUIDialogKeyboard::UpdateButtons()
+     SetControlLabel(iButton, aLabel);
+   }
+ 
++  for (int iButton = 909002; iButton <= 909007; iButton++)
++  {
++    aLabel[0] = iButton;
++    SetControlLabel(iButton, aLabel);
++  }
++
+   // set correct alphabet characters...
+ 
+   for (int iButton = 65; iButton <= 90; iButton++)
+@@ -688,9 +727,13 @@ int CGUIDialogKeyboard::GetCursorPos() const
+ void CGUIDialogKeyboard::OnSymbols()
+ {
+   if (m_keyType == SYMBOLS)
++	{
+     m_keyType = LOWER;
++	}
+   else
++	{
+     m_keyType = SYMBOLS;
++	}
+   UpdateButtons();
+ }
+ 
+@@ -738,10 +781,151 @@ void CGUIDialogKeyboard::ResetShiftAndSymbols()
+ 
+ const char* CGUIDialogKeyboard::s_charsSeries[10] = { " 0!@#$%^&*()[]{}<>/\\|", ".,1;:\'\"-+_=?`~", "ABC2", "DEF3", "GHI4", "JKL5", "MNO6", "PQRS7", "TUV8", "WXYZ9" };
+ 
++char CGUIDialogKeyboard::GetAddButtonById(int id)
++{
++	switch(id)
++			{
++				case 909002:
++					return '/';
++				break;
++				case 909003:
++					return '.';
++				break;
++				case 909004:
++					return ',';
++				break;
++				case 909005:
++					return ':';
++				break;
++				case 909006:
++					return ';';
++				break;
++				case 909007:
++					return '_';
++				break;
++			}
++}
++
++CStdString CGUIDialogKeyboard::GetRusLabelById(int id, bool capital = false)
++{
++	CStdString tmp;
++		switch(id)
++		{
++			case 65:
++			tmp = capital?"А":"а";
++			break;
++			case 66:
++			tmp = capital?"Б":"б";
++			break;
++			case 67:
++			tmp = capital?"В":"в";
++			break;
++			case 68:
++			tmp = capital?"Г":"г";
++			break;
++			case 69:
++			tmp = capital?"Д":"д";
++			break;
++			case 70:
++			tmp = capital?"Е":"е";
++			break;
++			case 71:
++			tmp = capital?"Ж":"ж";
++			break;
++			case 72:
++			tmp = capital?"З":"з";
++			break;
++			case 73:
++			tmp = capital?"И":"и";
++			break;
++			case 74:
++			tmp = capital?"Й":"й";
++			break;
++			case 75:
++			tmp = capital?"К":"к";
++			break;
++			case 76:
++			tmp = capital?"Л":"л";
++			break;
++			case 77:
++			tmp = capital?"М":"м";
++			break;
++			case 78:
++			tmp = capital?"Н":"н";
++			break;
++			case 79:
++			tmp = capital?"О":"о";
++			break;
++			case 80:
++			tmp = capital?"П":"п";
++			break;
++			case 81:
++			tmp = capital?"Р":"р";
++			break;
++			case 82:
++			tmp = capital?"С":"с";
++			break;
++			case 83:
++			tmp = capital?"Т":"т";
++			break;
++			case 84:
++			tmp = capital?"У":"у";
++			break;
++			case 85:
++			tmp = capital?"Ф":"ф";
++			break;
++			case 86:
++			tmp = capital?"Х":"х";
++			break;
++			case 87:
++			tmp = capital?"Ц":"ц";
++			break;
++			case 88:
++			tmp = capital?"Ч":"ч";
++			break;
++			case 89:
++			tmp = capital?"Ш":"ш";
++			break;
++			case 90:
++			tmp = capital?"Щ":"щ";
++			break;
++			case 909002:
++			tmp = capital?"Ъ":"ъ";
++			break;
++			case 909003:
++			tmp = capital?"Ы":"ы";
++			break;
++			case 909004:
++			tmp = capital?"Ь":"ь";
++			break;
++			case 909005:
++			tmp = capital?"Э":"э";
++			break;
++			case 909006:
++			tmp = capital?"Ю":"ю";
++			break;
++			case 909007:
++			tmp = capital?"Я":"я";
++			break;
++		}
++	return tmp;
++}
++
+ void CGUIDialogKeyboard::SetControlLabel(int id, const CStdString &label)
+ { // find all controls with this id, and set all their labels
+   CGUIMessage message(GUI_MSG_LABEL_SET, GetID(), id);
+-  message.SetLabel(label);
++	CStdString tmp = label;
++  if (m_keyType != SYMBOLS)
++	{
++		bool capital = true;
++		if ((m_keyType == CAPS && m_bShift) || (m_keyType == LOWER && !m_bShift)) capital = false;
++		if(((id >= 65 && id <= 90) || (id >= 909002 && id <= 909007 ))&&(m_keyLayout == RUS))
++		{
++				tmp = GetRusLabelById(id, capital);
++		}
++		if((id >= 909002 && id <= 909007 ) && (m_keyLayout == ENG)) tmp = GetAddButtonById(id);
++	}
++  message.SetLabel(tmp);
+   for (unsigned int i = 0; i < m_children.size(); i++)
+   {
+     if (m_children[i]->GetID() == id || m_children[i]->IsGroup())
+diff --git a/xbmc/dialogs/GUIDialogKeyboard.h b/xbmc/dialogs/GUIDialogKeyboard.h
+index 029a32c..1042cb1 100644
+--- a/xbmc/dialogs/GUIDialogKeyboard.h
++++ b/xbmc/dialogs/GUIDialogKeyboard.h
+@@ -26,6 +26,8 @@
+ 
+ enum KEYBOARD {CAPS, LOWER, SYMBOLS };
+ 
++enum KEYBOARD_LAYOUT {ENG, RUS };
++
+ class CGUIDialogKeyboard: public CGUIDialog
+ {
+ 
+@@ -37,6 +39,8 @@ public:
+   void SetHeading(const CVariant& heading);
+   void SetText(const CStdString& aTextString);
+   CStdString GetText() const;
++	CStdString GetRusLabelById(int id, bool capital);
++	char GetAddButtonById(int id);
+   bool IsConfirmed() { return m_bIsConfirmed; };
+   void SetHiddenInput(bool hiddenInput) { m_hiddenInput = hiddenInput; };
+ 
+@@ -66,7 +70,7 @@ private:
+   void OnClickButton(int iButtonControl);
+   void OnRemoteNumberClick(int key);
+   void UpdateButtons();
+-  char GetCharacter(int iButton);
++  WCHAR GetCharacter(int iButton);
+   void UpdateLabel();
+   void ResetShiftAndSymbols();
+ 
+@@ -77,6 +81,7 @@ private:
+   CStdStringW m_strEdit;
+   bool m_bIsConfirmed;
+   KEYBOARD m_keyType;
++  KEYBOARD_LAYOUT m_keyLayout;
+   int m_iMode;
+   bool m_bShift;
+   bool m_hiddenInput;

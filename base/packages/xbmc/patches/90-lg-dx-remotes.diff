@@ -1,0 +1,90 @@
+--- a/system/Lircmap.xml	2012-02-29 14:54:59.180629083 +0200
++++ b/system/Lircmap.xml	2012-02-29 14:59:25.617284368 +0200
+@@ -9,6 +9,87 @@
+ <!-- For a list of XBMC_COMMAND's check out the <remote> sections of keymap.xml   -->
+ 
+ <lircmap>
++    <remote device="dxremote">
++        <!-- no Display -->
++<!--        <power>KEY_POWER</power> -->
++        <menu>KEY_PREVIOUS</menu>
++        <back>KEY_BACK</back>
++        <title>KEY_INFO</title>
++        <red>KEY_RED</red>
++        <green>KEY_WWW</green>
++        <yellow>KEY_EMAIL</yellow>
++        <blue>KEY_BLUE</blue>
++        <left>KEY_LEFT</left>
++        <right>KEY_RIGHT</right>
++        <up>KEY_UP</up>
++        <down>KEY_DOWN</down>
++        <select>KEY_OK</select>
++        <volumeplus>KEY_VOLUMEUP</volumeplus>
++        <volumeminus>KEY_VOLUMEDOWN</volumeminus>
++        <pageplus>KEY_CHANNELUP</pageplus>
++        <pageminus>KEY_CHANNELDOWN</pageminus>
++        <mute>KEY_MUTE</mute>
++        <play>KEY_PLAY</play>
++        <pause>KEY_PAUSE</pause>
++        <stop>KEY_STOP</stop>
++        <forward>KEY_FORWARD</forward>
++        <reverse>KEY_REWIND</reverse>
++        <skipplus>KEY_NEXT</skipplus>
++        <skipminus>KEY_AGAIN</skipminus>
++        <record>KEY_RECORD</record>
++        <one>KEY_1</one>
++        <two>KEY_2</two>
++        <three>KEY_3</three>
++        <four>KEY_4</four>
++        <five>KEY_5</five>
++        <six>KEY_6</six>
++        <seven>KEY_7</seven>
++        <eight>KEY_8</eight>
++        <nine>KEY_9</nine>
++        <zero>KEY_0</zero>
++        <clear>KEY_CLEAR</clear>
++<!--        <enter>KEY_OK</enter> -->
++        <!-- with Display -->
++        <display>Aspect</display>
++        <start>Home</start>
++        <myvideo>KEY_VIDEO</myvideo>
++        <mymusic>KEY_MEDIA</mymusic>
++        <mypictures>Pictures</mypictures>
++        <mytv>KEY_TV</mytv>
++        <!-- old versions of harmony -->
++        <star>Star</star>
++        <hash>Hash</hash>
++    </remote>
++    <remote device="LG_MKJ32022835">
++<!--        <power>KEY_POWER</power> -->
++        <left>KEY_LEFT</left>
++        <right>KEY_RIGHT</right>
++        <up>KEY_UP</up>
++        <down>KEY_DOWN</down>
++        <select>KEY_OK</select>
++        <play>KEY_PLAY</play>
++        <pause>KEY_PAUSE</pause>
++        <stop>KEY_STOP</stop>
++        <forward>KEY_FORWARD</forward>
++        <reverse>KEY_REWIND</reverse>
++        <one>KEY_1</one>
++        <two>KEY_2</two>
++        <three>KEY_3</three>
++        <four>KEY_4</four>
++        <five>KEY_5</five>
++        <six>KEY_6</six>
++        <seven>KEY_7</seven>
++        <eight>KEY_8</eight>
++        <nine>KEY_9</nine>
++        <zero>KEY_0</zero>
++</remote>
++<remote device="LG_MKJ32022835_VCR">
++        <back>KEY_BACK</back>
++        <volumeplus>KEY_VOLUMEUP</volumeplus>
++        <volumeminus>KEY_VOLUMEDOWN</volumeminus>
++        
++</remote>
++
+ 	<remote device="xbox">
+ 		<play>Play</play>
+ 		<pause>Pause</pause>

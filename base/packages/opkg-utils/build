@@ -1,0 +1,11 @@
+#!/bin/sh
+
+. config/options
+
+setup_toolchain host
+export PYTHON=python2
+
+cd $BUILD/$1*
+make CC=gcc
+mkdir -p $ROOT/$TOOLCHAIN/bin
+cp -f opkg-build $ROOT/$TOOLCHAIN/bin

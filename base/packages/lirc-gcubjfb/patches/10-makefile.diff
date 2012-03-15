@@ -1,0 +1,24 @@
+diff -Naur lirc-gcubjfb-0.3/lirc_igorhid/Makefile lirc-gcubjfb-0.3-mod/lirc_igorhid/Makefile
+--- lirc-gcubjfb-0.3/lirc_igorhid/Makefile	2011-08-14 20:05:35.000000000 +0300
++++ lirc-gcubjfb-0.3-mod/lirc_igorhid/Makefile	2012-02-27 11:27:44.654545791 +0200
+@@ -1,9 +1,17 @@
+ #!/usr/bin/make
+ obj-m := lirc_igorhid.o
+-KVERSION := $(shell uname -r)
++KERNEL_VERSION := $(shell uname -r)
++
++MODLIB := $(INSTALL_MOD_PATH)/lib/modules/$(KERNEL_VERSION)
++
++export MODLIB
++
++KDIR := $(MODLIB)/build
++
++PWD := $(shell pwd)
+ 
+ all:
+-	$(MAKE) -C /lib/modules/$(KVERSION)/build M=$(PWD) modules
++	$(MAKE) -C $(KDIR) M=$(PWD) modules
+ 
+ clean:
+-	$(MAKE) -C /lib/modules/$(KVERSION)/build M=$(PWD) clean
++	$(MAKE) -C $(KDIR) M=$(PWD) clean

@@ -1,0 +1,8 @@
+#!/bin/sh
+
+. config/options
+
+cd $BUILD/$1*/lirc_igorhid
+#do_configure
+#make
+make KDIR=$(kernel_path)

@@ -1,0 +1,12 @@
+#!/bin/sh
+
+. config/options
+
+cd $BUILD/$1*
+
+unset CDPATH
+
+do_configure \
+    --without-x \
+make
+make_install

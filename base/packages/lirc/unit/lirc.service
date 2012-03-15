@@ -1,0 +1,19 @@
+[Unit]
+Description=LIRC Daemon
+After=network.target
+Name=lirc
+
+[Service]
+Type=forking
+EnvironmentFile=/etc/conf.d/lircd.conf
+PIDFile=/var/run/lirc/lircd.pid
+ExecStartPre=/bin/mkdir -p /var/run/lirc
+ExecStartPre=/bin/rm -f /dev/lirc
+ExecStartPre=/bin/rm -f /var/run/lirc/lircd
+ExecStartPre=/bin/ln -s /var/run/lirc/lircd /dev/lirc
+ExecStart=/usr/sbin/lircd -P /var/run/lirc/lircd.pid -d /dev/lirc0 $LIRCD_OPTS
+ExecStopPost=/bin/rm -f /dev/lirc
+ExecStopPost=/bin/rm -fR /var/run/lirc
+
+[Install]
+WantedBy=multi-user.target

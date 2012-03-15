@@ -1,0 +1,11 @@
+PKG_NAME=lirc-gcubjfb
+PKG_VERSION=0.3
+PKG_URL="https://code.google.com/p/lirc-gcujoyfb/"
+PKG_URL_PROTO=git
+PKG_REV=1
+PKG_DEPENDS="$TARGET_LIBC"
+PKG_BUILD_DEPENDS="toolchain linux linux-headers"
+PKG_PRIORITY=optional
+PKG_SECTION=drivers
+PKG_SHORTDESC="RadRey GCuJoyFB kernel module"
+PKG_LONGDESC="Lirc driver for ATMEGA8-based infrared remote receiver with GCuJoyFB/N firmware. Old project name is lirc-igorhid."
